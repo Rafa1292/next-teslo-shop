@@ -23,12 +23,12 @@ export const ProductGridItem = ( { product }: Props ) => {
     : '/imgs/placeholder.jpg';
 
   return (
-    <div className="rounded-md overflow-hidden fade-in">
+    <div className="rounded-md  overflow-hidden fade-in">
       <Link href={ `/product/${ product.slug }` }>
         <Image
           src={ localSrc }
           alt={ product.title }
-          className="w-full object-cover rounded"
+          className="w-full object-cover rounded h-[200px] lg:h-[400px]"
           width={ 500 }
           height={ 500 }
           onMouseEnter={ () => setDisplayImage( product.images[1] )  }
