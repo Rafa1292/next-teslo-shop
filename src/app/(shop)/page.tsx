@@ -28,7 +28,7 @@ export default async function Home({ searchParams }: Props) {
       <Title
         title="Tienda"
         subtitle="Todos los productos"
-        className="mb-2"
+        className="mb-2 px-2"
       />
 
       <ProductGrid 
